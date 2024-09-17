@@ -1,1 +1,30 @@
-install.packages("pacman")
+if (!require("pacman")) install.packages("pacman")
+
+pkgs <- c("conflicted",
+          "cowplot",
+          "crayon",
+          "crul",
+          "dm",
+          "DT",
+          "forcats",
+          "geodata",
+          "ggrepel",
+          "glue",
+          "googledrive",
+          "haven",
+          "here",
+          "httr",
+          "janitor",
+          "kableExtra",
+          "knitr",
+          "Microsoft365R",
+          "progress",
+          "RcppSimdJson",
+          "readxl",
+          "terra",
+          "tidyverse",
+          "tidyterra",
+          "viridisLite",
+          "zip")
+
+pacman::p_load(pkgs, character.only = T)
